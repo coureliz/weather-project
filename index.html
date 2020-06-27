@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courtney Peppe — SheCodes Plus Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/207481f090.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@200;400;600;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-9">
+                        <input class="form-control form-control-lg" type="text" placeholder="search"
+                            id="search-form-input" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="🔍" class="form-control form-control-lg"></div>
+
+
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <span style="font-size: 8rem; color: white;">
+                        <i class="fas fa-cloud"></i>
+                    </span>
+                </div>
+                <div class="col-6">
+                    <h1><span id="current-temp">25</span>°C</h1>
+                    <h2 id="city">New York City</h2>
+                    <ul>
+                        <li id="current-date-time">Saturday 5:00</li>
+                        <li id="current-description">Cloudy</li>
+                    </ul>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-3">
+                    <span style="font-size: 4rem; color: white;">
+                        <i class="fas fa-cloud-sun"></i>
+                    </span>
+                    <h3>Sun</h3>
+                    <p>50°F</p>
+                </div>
+                <div class="col-3">
+                    <span style="font-size: 4rem; color: white;">
+                        <i class="fas fa-sun"></i>
+                    </span>
+                    <h3>Mon</h3>
+                    <p>51°F</p>
+                </div>
+                <div class="col-3">
+                    <span style="font-size: 4rem; color: white;">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </span>
+                    <h3>Tue</h3>
+                    <p>52°F</p>
+                </div>
+                <div class="col-3">
+                    <span style="font-size: 4rem; color: white;">
+                        <i class="fas fa-wind"></i>
+                    </span>
+                    <h3>Wed</h3>
+                    <p>53°F</p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
